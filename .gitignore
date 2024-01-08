@@ -1,3 +1,6 @@
 .vscode
+.project
+.settings
 /charts/*/charts
 /charts/*/requirements.lock
+.DS_Store
