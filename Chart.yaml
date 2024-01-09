@@ -10,14 +10,14 @@ dependencies:
   condition: grafana.enabled
   version: "~7.0.21"
   repository:  "https://grafana.github.io/helm-charts"
-# - name: "loki"
-#   condition: loki.enabled
-#   repository: "https://grafana.github.io/helm-charts"
-#   version: "~5.41.4"
-# - name: "promtail"
-#   condition: promtail.enabled
-#   repository: "https://grafana.github.io/helm-charts"
-#   version: "~6.15.3"
+- name: "loki"
+  condition: loki.enabled
+  repository: "https://grafana.github.io/helm-charts"
+  version: "~5.41.4"
+- name: "promtail"
+  condition: promtail.enabled
+  repository: "https://grafana.github.io/helm-charts"
+  version: "~6.15.3"
 # - name: "tempo"
 #   condition: tempo.enabled
 #   repository: "https://grafana.github.io/helm-charts"
