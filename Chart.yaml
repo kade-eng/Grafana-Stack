@@ -1,6 +1,6 @@
 apiVersion: v2
 name: grafana-stack
-description: A Helm chart for Kubernetes
+description: "Grafana, with Prometheus, Loki, and Tempo built-in!"
 type: application
 version: 0.1.0
 appVersion: "1.0.0"
