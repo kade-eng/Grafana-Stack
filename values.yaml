@@ -3,6 +3,33 @@ grafana:
   version: "7.0.21"
   adminUser: admin
   adminPassword: strongpassword
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+      - name: Prometheus
+        type: prometheus
+        access: proxy
+        url: http://grafana-stack-prometheus-server.default.svc.cluster.local:80/
+        jsonData:
+          httpMethod: POST
+          manageAlerts: true
+          prometheusType: Prometheus
+          prometheusVersion: 2.48.1
+          cacheLevel: 'Medium'
+          disableRecordingRules: false
+          incrementalQueryOverlapWindow: 10m
+      - name: Loki
+        type: loki
+        access: proxy
+        url: http://grafana-stack-loki.default.svc.cluster.local:3100/
+        jsonData:
+          maxLines: 1000
+      - name: Tempo
+        type: tempo
+        access: proxy
+        url: http://grafana-stack-tempo.default.svc.cluster.local:3100/
+
 
 loki:
   enabled: true
