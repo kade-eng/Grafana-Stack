@@ -49,6 +49,6 @@ tempo:
   enabled: true
   version: "1.7.1"
 
-# prometheus:
-#   enabled: true
-#   version: "25.8.2"
+prometheus:
+  enabled: true
+  version: "25.8.2"
