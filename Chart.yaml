@@ -18,10 +18,10 @@ dependencies:
   condition: promtail.enabled
   repository: "https://grafana.github.io/helm-charts"
   version: "~6.15.3"
-# - name: "tempo"
-#   condition: tempo.enabled
-#   repository: "https://grafana.github.io/helm-charts"
-#   version: "~1.7.1"
+- name: "tempo"
+  condition: tempo.enabled
+  repository: "https://grafana.github.io/helm-charts"
+  version: "~1.7.1"
 # - name: "prometheus"
 #   condition: prometheus.enabled
 #   version: "~25.8.2"
