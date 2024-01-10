@@ -2,7 +2,7 @@ grafana:
   enabled: true
   version: "7.0.21"
   adminUser: admin
-  adminPassword: strongpassword
+  adminPassword: admin
   datasources:
     datasources.yaml:
       apiVersion: 1
