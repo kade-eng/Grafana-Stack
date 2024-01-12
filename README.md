@@ -1,6 +1,6 @@
 # Grafana-Stack Helm CHart
 
-This Helm chart deploys a comprehensive monitoring stack, including Grafana, Tempo, Loki, Promtail, and Prometheus. It simplifies the setup process by automatically adding Tempo, Loki, and Prometheus datasources to Grafana (assuming the chart is deployed to the default namespace).
+This Helm chart deploys a comprehensive monitoring stack, including Grafana, Tempo, Loki, Promtail, and Prometheus. It simplifies the setup process by automatically adding Tempo, Loki, and Prometheus datasources to Grafana.
 
 ## Prerequiresites
 - Kubernetes cluster
@@ -11,7 +11,7 @@ This Helm chart deploys a comprehensive monitoring stack, including Grafana, Tem
 1. ```git clone https://github.com/kade-eng/grafana-stack.git```
 2. ```cd grafana-stack```
 3. ```helm dependency build```
-4. ```helm install grafana-stack ./```
+4. ```helm install grafana-stack ./ --namespace monitoring```
 
 ## Accessing Grafana
 You can quickly access grafana for testing purposes by port-forwarding the grafana-stack service (ex. ```kubectl port-forward svc/grafana-stack 3000:80```) and then viewing from localhost (ex. ```http://localhost:3000/```)
