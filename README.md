@@ -1,6 +1,6 @@
 # Grafana-Stack Helm CHart
 
-This Helm chart deploys a comprehensive monitoring stack, including Grafana, Tempo, Loki, Promtail, and Prometheus. It simplifies the setup process by automatically adding Tempo, Loki, and Prometheus datasources to Grafana.
+This Helm chart deploys a comprehensive monitoring stack, including Grafana, Tempo, Loki, Promtail, and Prometheus. It simplifies the setup process by automatically adding Tempo, Loki, and Prometheus datasources to Grafana (assuming the chart is deployed to the default namespace).
 
 ## Prerequiresites
 - Kubernetes cluster
