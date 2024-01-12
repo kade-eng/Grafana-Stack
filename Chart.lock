@@ -4,7 +4,7 @@ dependencies:
   version: 7.0.22
 - name: loki
   repository: https://grafana.github.io/helm-charts
-  version: 5.41.4
+  version: 5.41.6
 - name: promtail
   repository: https://grafana.github.io/helm-charts
   version: 6.15.3
@@ -14,5 +14,8 @@ dependencies:
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
   version: 25.8.2
-digest: sha256:7462e7513f5760c631d15d3ed377cde9b9505b34988857cb4ecb3bb44c1c3fac
-generated: "2024-01-09T19:20:25.0953628-05:00"
+- name: thanos
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 12.20.3
+digest: sha256:780eac07ae19fa7f9fa10adf4a436fbec1ae94966a6a4f1d7d1efd5b4f6d6fa7
+generated: "2024-01-12T10:44:22.1898307-05:00"

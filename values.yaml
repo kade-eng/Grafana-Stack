@@ -10,7 +10,7 @@ grafana:
       - name: Prometheus
         type: prometheus
         access: proxy
-        url: http://grafana-stack-prometheus-server.default.svc.cluster.local:80/
+        url: http://grafana-stack-prometheus-server.monitoring.svc.cluster.local:80/
         jsonData:
           httpMethod: POST
           manageAlerts: true
@@ -22,13 +22,13 @@ grafana:
       - name: Loki
         type: loki
         access: proxy
-        url: http://grafana-stack-loki.default.svc.cluster.local:3100/
+        url: http://grafana-stack-loki.monitoring.svc.cluster.local:3100/
         jsonData:
           maxLines: 1000
       - name: Tempo
         type: tempo
         access: proxy
-        url: http://grafana-stack-tempo.default.svc.cluster.local:3100/
+        url: http://grafana-stack-tempo.monitoring.svc.cluster.local:3100/
 
 
 loki:
@@ -80,3 +80,7 @@ tempo:
 prometheus:
   enabled: true
   version: "25.8.2"
+
+thanos:
+  enabled: true
+  version: "12.20.3"
