@@ -11,11 +11,11 @@ dependencies:
 - name: tempo
   repository: https://grafana.github.io/helm-charts
   version: 1.7.1
-- name: prometheus
-  repository: https://prometheus-community.github.io/helm-charts
-  version: 25.8.2
+- name: kube-prometheus
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 8.23.3
 - name: thanos
   repository: oci://registry-1.docker.io/bitnamicharts
   version: 12.20.3
-digest: sha256:780eac07ae19fa7f9fa10adf4a436fbec1ae94966a6a4f1d7d1efd5b4f6d6fa7
-generated: "2024-01-12T10:44:22.1898307-05:00"
+digest: sha256:75a8cbc788b8a429d9fc4cd87bc055ed61d51f1c15a2bc6f92784875652c62d6
+generated: "2024-01-12T11:22:20.3960482-05:00"

@@ -10,7 +10,7 @@ grafana:
       - name: Prometheus
         type: prometheus
         access: proxy
-        url: http://grafana-stack-prometheus-server.monitoring.svc.cluster.local:80/
+        url: http://grafana-stack-kube-prometh-prometheus.monitoring.svc.cluster.local:9090/
         jsonData:
           httpMethod: POST
           manageAlerts: true
@@ -77,9 +77,12 @@ tempo:
   enabled: true
   version: "1.7.1"
 
-prometheus:
+kube-prometheus:
   enabled: true
-  version: "25.8.2"
+  version: "8.23.3"
+  prometheus:
+    thanos:
+      create: true
 
 thanos:
   enabled: true

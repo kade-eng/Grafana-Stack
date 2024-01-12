@@ -22,10 +22,10 @@ dependencies:
   condition: tempo.enabled
   repository: "https://grafana.github.io/helm-charts"
   version: "~1.7.1"
-- name: "prometheus"
-  condition: prometheus.enabled
-  version: "~25.8.2"
-  repository:  "https://prometheus-community.github.io/helm-charts"
+- name: "kube-prometheus"
+  condition: kube-prometheus.enabled
+  version: "~8.23.3"
+  repository:  "oci://registry-1.docker.io/bitnamicharts"
 - name: "thanos"
   condition: thanos.enabled
   version: "12.20.3"
