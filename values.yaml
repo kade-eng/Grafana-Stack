@@ -87,3 +87,5 @@ kube-prometheus:
 thanos:
   enabled: true
   version: "12.20.3"
+  storegateway:
+    enabled: false
